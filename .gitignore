@@ -1,0 +1,23 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Dossiers spécifiques
+node_modules/
+dist/
+.cache/
+public/
+
+# Fichiers de build
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers d'environnement
+.env*
+.env.local
+
+# Fichiers de configuration
+vue.config.js
+babel.config.js

@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .nav_link {
+    @apply cursor-pointer text-xl;
+  }
+}
