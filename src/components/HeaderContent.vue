@@ -3,10 +3,14 @@
   <header class="py-4 relative">
     <div class="flex justify-between items-center w-full">
       <div class="fex-shrink-0l">
-        <img src="../assets/nike_logo.png" class="w-16 md:w-20 cursor-pointer" alt="Nike Logo" />
+        <img
+          src="../assets/nike_logo.png"
+          class="w-16 md:w-20 cursor-pointer"
+          alt="Nike Logo"
+        />
       </div>
       <nav class="hidden md:flex justify-center flex-grow">
-        <ul class="flex gap-20">
+        <ul class="flex gap-20 uppercase">
           <li class="nav_link">Men</li>
           <li class="nav_link">Women</li>
           <li class="nav_link">Kids</li>
@@ -16,7 +20,11 @@
       <div class="flex items-center gap-4">
         <div class="hidden md:block">
           <div class="py-1 px-4 bg-gray-200 flex rounded-full">
-            <input class="bg-transparent focus:outline-none" type="search" placeholder="Search" />
+            <input
+              class="bg-transparent focus:outline-none"
+              type="search"
+              placeholder="Search"
+            />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -33,7 +41,7 @@
             </svg>
           </div>
         </div>
-        <div class="block md:hidden">
+        <div class="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
