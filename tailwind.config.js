@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: 'Oswald, ui-serif',
+        primary: 'Oswald',
       }
     },
   },

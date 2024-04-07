@@ -5,7 +5,7 @@ import Slide from "./components/SliderContent.vue";
 </script>
 
 <template>
-  <main class="px-32 bg-[#d8d7d7] h-screen">
+  <main class="px-32 bg-[#d8d7d7] h-screen font-primary">
     <Header />
     <Main />
     <Slide />

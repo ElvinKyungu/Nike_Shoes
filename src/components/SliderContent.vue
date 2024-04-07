@@ -31,7 +31,7 @@
         viewBox="0 0 24 24"
         stroke-width="2"
         stroke="currentColor"
-        class="w-full h-full"
+        class="w-full h-full cursor-pointer"
       >
         <path
           stroke-linecap="round"

@@ -16,7 +16,7 @@
         </div>
       </div>
       <h1
-        class="absolute text-[40rem] transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 uppercase text-[#E8E8E8]"
+        class="absolute text-[43rem] transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 uppercase text-[#E8E8E8]"
       >
         Nike
       </h1>
@@ -26,14 +26,14 @@
     </div>
     <div class="w-full md:w-1/5 relative flex justify-end md:left-32">
       <div class="w-full flex flex-col">
-        <h3 class="font-semibold text-xl">Nike Air Force</h3>
-        <h4 class="font-semibold text-lg mt-4 mb-2">New collection</h4>
-        <span class="font-semibold">150$</span>
+        <h3 class="text-3xl">Nike Air Force</h3>
+        <h4 class="text-2xl mt-4 mb-2">New collection</h4>
+        <span class="text-xl">150$</span>
         <div class="flex items-center justify-start -ml-4 gap-4 p-2">
           <button
-            class="bg-white border border-gray-200 flex p-2 rounded-full px-4"
+            class="bg-white border border-gray-200 flex p-2 rounded-full px-4 gap-3"
           >
-            <span>Add to cart</span>
+            <span class="text-lg">Add to cart</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
