@@ -1,13 +1,13 @@
 <script setup>
-  import IconSearch from './icons/IconSearch.vue'
-  import IconShoping from './icons/IconShoping.vue'
+import IconSearch from "./icons/IconSearch.vue";
+import IconShoping from "./icons/IconShoping.vue";
 </script>
 <template>
   <header class="py-4 relative z-50">
     <div class="flex justify-between items-center w-full">
       <div class="fex-shrink-0l">
         <img
-          src="../assets/nike_logo.png"
+          src="/nike_logo.png"
           class="w-16 md:w-20 cursor-pointer"
           alt="Nike Logo"
         />
@@ -36,11 +36,11 @@
               type="search"
               placeholder="Search"
             />
-            <IconSearch/>
+            <IconSearch />
           </div>
         </div>
         <div class="">
-          <IconShoping/>
+          <IconShoping />
         </div>
       </div>
     </div>

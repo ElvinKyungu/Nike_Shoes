@@ -1,6 +1,14 @@
+<script setup lang="ts">
+  import IconAdd from './icons/IconAdd.vue';
+  import { useImageStore } from "@/stores/imageStore";
+  import { computed } from 'vue'
+
+  const useImage = useImageStore()
+  const selectedImageUrl = computed(() => useImage.selectedImageUrl);
+</script>
 <template>
   <main
-    class="flex flex-col md:flex-row items-center justify-between mt-40 w-full"
+    class="flex flex-col md:flex-row items-center justify-between mt-28 w-full"
   >
     <div class="w-full md:w-1/6">
       <h1 class="flex flex-col text-[7rem] font-thin">
@@ -12,11 +20,11 @@
     <div class="w-full md:w-3/5 relative">
       <div class="absolute inset-0 flex justify-center items-center">
         <div class="z-20 transform -rotate-[25deg]">
-          <img src="../assets/shoe1.png" class="w-full" alt="" />
+          <img :src="selectedImageUrl" class="w-full" alt="" />
         </div>
       </div>
       <h1
-        class="absolute text-[43rem] transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 uppercase text-[#E8E8E8]"
+        class="absolute text-[30rem] transform -rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 uppercase text-[#E8E8E8]"
       >
         Nike
       </h1>
@@ -34,20 +42,7 @@
             class="bg-white border border-gray-200 flex p-2 rounded-full px-4 gap-3"
           >
             <span class="text-lg">Add to cart</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 4.5v15m7.5-7.5h-15"
-              />
-            </svg>
+            <IconAdd/>
           </button>
         </div>
       </div>
