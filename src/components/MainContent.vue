@@ -1,20 +1,10 @@
 <script setup lang="ts">
   import IconAdd from './icons/IconAdd.vue';
   import { useImageStore } from "@/stores/imageStore";
-  import { computed, onMounted, watch } from 'vue'
-  import gsap from "gsap";
+  import { computed } from 'vue'
 
   const useImage = useImageStore()
-  const selectedImageUrl = computed(() => useImage.selectedImage);
-
-  function animateImage(index: number) {
-    const shoes = document.querySelector('.shoes');
-    gsap.to(shoes, {
-      duration: 2,
-      y: `-${index * 100}%`,
-      ease: "elastic.out(1,0.75)",
-    });
-  }
+  const selectedImageUrl = computed(() => useImage.selectedImage.imgUrl)
 </script>
 <template>
   <main

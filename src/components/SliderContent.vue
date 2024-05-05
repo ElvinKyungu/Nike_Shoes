@@ -1,11 +1,17 @@
 <script setup lang="ts">
 import { useImageStore } from "@/stores/imageStore"
-
+import gsap from "gsap";
 const userImage = useImageStore()
 const images = userImage.images
 
-const handleClick = (index: number) => {
+  const handleClick = (index: number) => {
     userImage.setSelectedImageUrl(images[index].imgUrl);
+    const shoes = document.querySelector('.shoes');
+    gsap.to(shoes, {
+      duration: 2,
+      y: `-${index * 10}%`,
+      ease: "elastic.out(1,0.75)",
+    });
   };
 </script>
 
@@ -16,7 +22,7 @@ const handleClick = (index: number) => {
         v-for="(image, index) in images"
         :key="image.id"
         class="bg-white py-5 px-6 rounded-lg cursor-pointer transition-all ease-in-out duration-300 hover:px-14 flex items-center justify-center h-full shrink-0"
-        @click="handleClick(image.id)"
+        @click="handleClick(index)"
       >
         <img :src="image.imgUrl" alt="" class="w-56 h-32 object-cover" />
       </div>
