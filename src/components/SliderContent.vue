@@ -16,7 +16,7 @@ const images = userImage.images
 </script>
 
 <template>
-  <div class="flex justify-center items-center mt-20 gap-20 z-50 relative">
+  <div class="flex justify-center items-center fixed gap-20 z-50 bottom-5">
     <div class="flex justify-center items-center gap-10">
       <div
         v-for="(image, index) in images"

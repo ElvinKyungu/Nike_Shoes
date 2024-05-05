@@ -3,7 +3,7 @@ import IconSearch from "./icons/IconSearch.vue";
 import IconShoping from "./icons/IconShoping.vue";
 </script>
 <template>
-  <header class="py-4 relative z-50">
+  <header class="py-4 z-50 mt-2 px-10 abolute inset-0 fixed">
     <div class="flex justify-between items-center w-full">
       <div class="fex-shrink-0l">
         <img

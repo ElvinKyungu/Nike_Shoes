@@ -1,8 +1,8 @@
-import { defineStore } from 'pinia';
-import shoe1 from "@/assets/shoe1.png";
-import shoe2 from "@/assets/shoe2.png";
-import shoe3 from "@/assets/shoe3.png";
-import shoe4 from "@/assets/shoe4.png";
+import { defineStore } from 'pinia'
+import shoe1 from "@/assets/shoe1.png"
+import shoe2 from "@/assets/shoe2.png"
+import shoe3 from "@/assets/shoe3.png"
+import shoe4 from "@/assets/shoe4.png"
 export const useImageStore = defineStore('image', {
   state: () => ({
     selectedImageUrl: shoe1,
@@ -23,4 +23,4 @@ export const useImageStore = defineStore('image', {
       this.selectedImageUrl = url;
     },
   },
-});
+})
