@@ -1,10 +1,28 @@
 <script setup lang="ts">
   import IconAdd from './icons/IconAdd.vue';
   import { useImageStore } from "@/stores/imageStore";
-  import { computed } from 'vue'
+  import { computed, onMounted, watch } from 'vue'
+  import gsap from "gsap";
 
   const useImage = useImageStore()
+  const selectedImage = useImage.selectedImage;
   const selectedImageUrl = computed(() => useImage.selectedImageUrl);
+
+  function animateImage(index: number) {
+    const shoes = document.querySelector('.shoes');
+    gsap.to(shoes, {
+      duration: 2,
+      y: `-${index * 100}%`,
+      ease: "elastic.out(1,0.75)",
+    });
+  }
+  onMounted(() => {
+    watch(selectedImage, (newImage, oldImage) => {
+      if (newImage) {
+        animateImage(newImage.id);
+      }
+    });
+  });
 </script>
 <template>
   <main
@@ -20,7 +38,7 @@
     <div class="w-full md:w-3/5 relative">
       <div class="absolute inset-0 flex justify-center items-center">
         <div class="z-20 transform -rotate-[25deg]">
-          <img :src="selectedImageUrl" class="w-full" alt="" />
+          <img :src="selectedImageUrl" class="w-full shoes" alt="" />
         </div>
       </div>
       <h1
