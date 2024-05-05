@@ -7,10 +7,10 @@ export const useImageStore = defineStore('image', {
   state: () => ({
     selectedImageUrl: shoe1,
     images: [
-      { id: 1, imgUrl: shoe1 },
-      { id: 2, imgUrl: shoe2 },
-      { id: 3, imgUrl: shoe3 },
-      { id: 4, imgUrl: shoe4 },
+      { id: 1, imgUrl: shoe1, name: 'Nike Air Force' },
+      { id: 2, imgUrl: shoe2, name: 'Nike Air Monarch'},
+      { id: 3, imgUrl: shoe3, name: 'Nike Air Max 720'},
+      { id: 4, imgUrl: shoe4, name: 'Nike Air Max 90'},
     ],
   }),
   getters: {

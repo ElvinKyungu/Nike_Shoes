@@ -21,10 +21,11 @@ const images = userImage.images
       <div
         v-for="(image, index) in images"
         :key="image.id"
-        class="bg-white py-5 px-6 rounded-lg cursor-pointer transition-all ease-in-out duration-300 hover:px-14 flex items-center justify-center h-full shrink-0"
+        class="bg-white py-5 px-6 rounded-lg cursor-pointer transition-alln flex flex-col ease-in-out duration-300 hover:px-14 items-center justify-center h-full shrink-0"
         @click="handleClick(index)"
       >
         <img :src="image.imgUrl" alt="" class="w-56 h-32 object-cover" />
+        <h2 class="my-4 text-3xl font-light">{{ image.name }}</h2>
       </div>
     </div>
   </div>
