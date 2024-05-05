@@ -31,7 +31,7 @@
         </div>
       </div>
       <h1
-        class="absolute text-[28rem] transform -rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 uppercase text-[#E8E8E8]"
+        class="absolute text-[37rem] transform  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 uppercase text-[#E8E8E8]"
       >
         Nike
       </h1>
