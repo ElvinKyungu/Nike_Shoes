@@ -2,8 +2,8 @@
   <main
     class="flex flex-col md:flex-row items-center justify-between mt-40 w-full"
   >
-    <div class="w-full md:w-1/5">
-      <h1 class="flex flex-col text-[5rem] font-thin">
+    <div class="w-full md:w-1/6">
+      <h1 class="flex flex-col text-[7rem] font-thin">
         <span> Just </span>
         <span> Do </span>
         <span> It </span>
