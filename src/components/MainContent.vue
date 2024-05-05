@@ -5,8 +5,7 @@
   import gsap from "gsap";
 
   const useImage = useImageStore()
-  const selectedImage = useImage.selectedImage;
-  const selectedImageUrl = computed(() => useImage.selectedImageUrl);
+  const selectedImageUrl = computed(() => useImage.selectedImage);
 
   function animateImage(index: number) {
     const shoes = document.querySelector('.shoes');
@@ -16,13 +15,6 @@
       ease: "elastic.out(1,0.75)",
     });
   }
-  onMounted(() => {
-    watch(selectedImage, (newImage, oldImage) => {
-      if (newImage) {
-        animateImage(newImage.id);
-      }
-    });
-  });
 </script>
 <template>
   <main
