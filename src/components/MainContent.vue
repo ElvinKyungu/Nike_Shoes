@@ -9,7 +9,7 @@
 </script>
 <template>
   <main
-    class="flex flex-col md:flex-row items-center justify-between -mt-14 w-full"
+    class="flex flex-col md:flex-row items-center justify-between -mt-40 w-full relative" 
   >
     <div class="w-full md:w-1/6">
       <h1 class="flex flex-col text-[7rem] font-thin">
@@ -24,9 +24,9 @@
         <div class="shoes flex flex-col justify-start items-center w-full h-screen">
           <div 
             v-for="(image, index) in images" :key="index"
-            class="flex items-center justify-center w-full abolute h-screen fixed pb-60 shrink-0"
+            class="flex items-center justify-center w-full abolute h-screen absolute pb-20 shrink-0"
           >
-            <img :src="selectedImageUrl" :alt="image.name" class=" w-[45rem]" />
+            <img :src="selectedImageUrl" :alt="image.name" />
           </div>
         </div>
       </div>
